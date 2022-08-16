@@ -8,13 +8,13 @@
             "Cy-Token": "token 9876032166"
         },
         "data": {
-            "phone_num": "[phone]",
+            "phone_num": "{{phone}}",
             "area_code": "86"
         }
     },
     {
         "desc": "网易云游戏",
-        "url": "https://n.cg.163.com/api/v1/phone-captchas/86-[phone]",
+        "url": "https://n.cg.163.com/api/v1/phone-captchas/86-{{phone}}",
         "method": "POST",
         "header": "",
         "data": {
@@ -35,7 +35,7 @@
         },
         "data": {
             "dial_code": "0086",
-            "phone": "[phone]"
+            "phone": "{{phone}}"
         }
     },
     {
@@ -46,18 +46,18 @@
             "Authorization": "7119181942667E7D85987C65A6D0B8EC",
             "Content-Type": "application/x-www-form-urlencoded"
         },
-        "data": "_app_version=10.13.2&_carrier=&_city=&_country=&_country_code=&_date=2022-04-05&_device_id=b6ad5aabe403d839&_device_manufacturer=Netease&_device_model=MuMu&_device_os=Android&_device_os_version=6.0.1&_distinct_id=a86d6bb7-8e26-43c5-baf3-82cdf95fffdd&_ip=&_is_login_id=0&_login_method=phone&_network_type=WIFI&_province=&_screen_height=2000&_screen_width=1125&_time=2022-04-05%2021%3A21%3A13&_user_id=a86d6bb7-8e26-43c5-baf3-82cdf95fffdd&_wifi=1&adCode=&brand=Android&city=&cityCode=&countryCode=86&imei=861151055733959&isCheckPhoneExist=0&latitude=&longitude=&market=yyb&nonce=708380&os=6.0.1&osType=1&phoneModel=MuMu&phoneNumber=[phone]&sessionId=e1c69361-c78b-4f4d-8c98-938ba4eccff6×tamp=[timestamp]&userID=-709178027&userKey=11111111111111111111111111111111&versioncode=187"
+        "data": "_app_version=10.13.2&_carrier=&_city=&_country=&_country_code=&_date=2022-04-05&_device_id=b6ad5aabe403d839&_device_manufacturer=Netease&_device_model=MuMu&_device_os=Android&_device_os_version=6.0.1&_distinct_id=a86d6bb7-8e26-43c5-baf3-82cdf95fffdd&_ip=&_is_login_id=0&_login_method=phone&_network_type=WIFI&_province=&_screen_height=2000&_screen_width=1125&_time=2022-04-05%2021%3A21%3A13&_user_id=a86d6bb7-8e26-43c5-baf3-82cdf95fffdd&_wifi=1&adCode=&brand=Android&city=&cityCode=&countryCode=86&imei=861151055733959&isCheckPhoneExist=0&latitude=&longitude=&market=yyb&nonce=708380&os=6.0.1&osType=1&phoneModel=MuMu&phoneNumber={{phone}}&sessionId=e1c69361-c78b-4f4d-8c98-938ba4eccff6×tamp={{timestamp}}&userID=-709178027&userKey=11111111111111111111111111111111&versioncode=187"
     },
     {
         "desc": "微爱app",
-        "url": "http://api.welove520.com/v5/account/phone/verifyCode/send?phone_number=[phone]&client_id=464847866_[timestamp]&type=6&area_code=86&app_key=ac5f34563a4344c4&sig=xvP64W04tR%2FNJoZEJEoJySmlIXU%3D",
+        "url": "http://api.welove520.com/v5/account/phone/verifyCode/send?phone_number={{phone}}&client_id=464847866_{{timestamp}}&type=6&area_code=86&app_key=ac5f34563a4344c4&sig=xvP64W04tR%2FNJoZEJEoJySmlIXU%3D",
         "method": "POST",
         "header": "",
         "data": ""
     },
     {
         "desc": "返利app(24小时限制)",
-        "url": "https://passport.fanli.com/mobileapi/i/user/mobileFastReg?jsoncallback=jQuery21105357980471043338_[timestamp]&mobile=[phone]&countrycode=86&mobilestep=1&_=[timestamp]",
+        "url": "https://passport.fanli.com/mobileapi/i/user/mobileFastReg?jsoncallback=jQuery21105357980471043338_{{timestamp}}&mobile={{phone}}&countrycode=86&mobilestep=1&_={{timestamp}}",
         "method": "GET",
         "header": "",
         "data": ""
@@ -67,18 +67,18 @@
         "url": "https://account.coolapk.com/auth/login?type=mobile",
         "method": "POST",
         "header": "",
-        "data": "submit=1&requestHash=c2592a6dr9x510&country=86&mobile=[phone]&captcha=&randomNumber=0undefined7952784010774208"
+        "data": "submit=1&requestHash=c2592a6dr9x510&country=86&mobile={{phone}}&captcha=&randomNumber=0undefined7952784010774208"
     },
     {
         "desc": "广东高考报名web",
         "url": "https://pg.eeagd.edu.cn/ks/public/kszc/zcyzm.jsmeb",
         "method": "POST",
         "header": "",
-        "data": "[phone]"
+        "data": "{{phone}}"
     },
     {
         "desc": "广东教育翔云",
-        "url": "https://gl.gdedu.gov.cn/api-service/captcha?phoneNumber=[phone]&captchaType=QUERY_ADMIN",
+        "url": "https://gl.gdedu.gov.cn/api-service/captcha?phoneNumber={{phone}}&captchaType=QUERY_ADMIN",
         "method": "GET",
         "header": "",
         "data": ""
@@ -90,7 +90,7 @@
         "header": "",
         "data": {
             "countryCode": "CN",
-            "mobile": "[phone]"
+            "mobile": "{{phone}}"
         }
     },
     {
@@ -99,7 +99,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "mobile": "[phone]"
+            "mobile": "{{phone}}"
         }
     },
     {
@@ -108,7 +108,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "tel": "[phone]",
+            "tel": "{{phone}}",
             "forgetPwd": ""
         }
     },
@@ -118,7 +118,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "tel": "[phone]"
+            "tel": "{{phone}}"
         }
     },
     {
@@ -127,7 +127,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "tel": "[phone]",
+            "tel": "{{phone}}",
             "callingCode": "86",
             "mode": "tel"
         }
@@ -138,7 +138,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "mobile": "[phone]",
+            "mobile": "{{phone}}",
             "captcha": ""
         }
     },
@@ -148,7 +148,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]",
+            "phone": "{{phone}}",
             "v": "yes"
         }
     },
@@ -158,7 +158,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]"
+            "phone": "{{phone}}"
         }
     },
     {
@@ -167,7 +167,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]"
+            "phone": "{{phone}}"
         }
     },
     {
@@ -176,7 +176,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]",
+            "phone": "{{phone}}",
             "type": "register",
             "voice": "0"
         }
@@ -187,7 +187,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "account": "[phone]"
+            "account": "{{phone}}"
         }
     },
     {
@@ -197,7 +197,7 @@
         "header": "",
         "data": {
             "pcode": "+86",
-            "phone": "[phone]"
+            "phone": "{{phone}}"
         }
     },
     {
@@ -206,7 +206,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "mobile": "[phone]",
+            "mobile": "{{phone}}",
             "email": "null",
             "verfy_method": "mobile"
         }
@@ -217,7 +217,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]"
+            "phone": "{{phone}}"
         }
     },
     {
@@ -226,7 +226,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]",
+            "phone": "{{phone}}",
             "verifytype": "1"
         }
     },
@@ -236,7 +236,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "mobile": "[phone]",
+            "mobile": "{{phone}}",
             "mobile_pre": "86"
         }
     },
@@ -246,7 +246,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "mobile": "[phone]"
+            "mobile": "{{phone}}"
         }
     },
     {
@@ -255,7 +255,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]"
+            "phone": "{{phone}}"
         }
     },
     {
@@ -264,7 +264,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "personcall": "[phone]"
+            "personcall": "{{phone}}"
         }
     },
     {
@@ -273,7 +273,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "mobile": "[phone]"
+            "mobile": "{{phone}}"
         }
     },
     {
@@ -282,7 +282,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phoneNumber": "[phone]",
+            "phoneNumber": "{{phone}}",
             "sendType": "0"
         }
     },
@@ -292,7 +292,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "mobile": "[phone]",
+            "mobile": "{{phone}}",
             "event": "register"
         }
     },
@@ -302,7 +302,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "mobile": "[phone]",
+            "mobile": "{{phone}}",
             "type": "1"
         }
     },
@@ -312,7 +312,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "telphone": "[phone]"
+            "telphone": "{{phone}}"
         }
     },
     {
@@ -321,7 +321,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "aae005": "[phone]",
+            "aae005": "{{phone}}",
             "aac003": "刘萌萌",
             "aac002": "210212198506035924",
             "notkeyflag": "1"
@@ -334,7 +334,7 @@
         "header": "",
         "data": {
             "action": "send",
-            "txtMember_Name": "[phone]"
+            "txtMember_Name": "{{phone}}"
         }
     },
     {
@@ -343,7 +343,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "mobile": "[phone]"
+            "mobile": "{{phone}}"
         }
     },
     {
@@ -353,7 +353,7 @@
         "header": "",
         "data": {
             "cmd": "GetTelVerifyCode",
-            "Tel": "[phone]"
+            "Tel": "{{phone}}"
         }
     },
     {
@@ -363,7 +363,7 @@
         "header": "",
         "data": {
             "tips": "1",
-            "shouji": "[phone]"
+            "shouji": "{{phone}}"
         }
     },
     {
@@ -372,7 +372,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]"
+            "phone": "{{phone}}"
         }
     },
     {
@@ -381,7 +381,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "mobile": "[phone]"
+            "mobile": "{{phone}}"
         }
     },
     {
@@ -390,40 +390,40 @@
         "method": "GET",
         "header": "",
         "data": {
-            "tel": "[phone]"
+            "tel": "{{phone}}"
         }
     },
     {
         "desc": "憨鼠社区",
-        "url": "https://www.dehua.net/include/ajax.php?service=siteConfig&action=getphoneVerify&type=signup&phone=[phone]&areaCode=86",
+        "url": "https://www.dehua.net/include/ajax.php?service=siteConfig&action=getphoneVerify&type=signup&phone={{phone}}&areaCode=86",
         "method": "GET",
         "header": "",
         "data": {}
     },
     {
         "desc": "天鹅到家",
-        "url": "https://user.daojia.com/mobile/getcode?mobile=[phone]&newVersion=1&bu=112",
+        "url": "https://user.daojia.com/mobile/getcode?mobile={{phone}}&newVersion=1&bu=112",
         "method": "GET",
         "header": "",
         "data": {}
     },
     {
         "desc": "诺达筑工",
-        "url": "http://ks.ndzhugong.com/getVerificationCode?phone=[phone]&password=&smscode=",
+        "url": "http://ks.ndzhugong.com/getVerificationCode?phone={{phone}}&password=&smscode=",
         "method": "GET",
         "header": "",
         "data": {}
     },
     {
         "desc": "栋才智慧",
-        "url": "http://211.149.170.226:8201/dczp-cloud-client/rrs/user/sendSms?[phone]&[phone]&smsMode=2",
+        "url": "http://211.149.170.226:8201/dczp-cloud-client/rrs/user/sendSms?{{phone}}&{{phone}}&smsMode=2",
         "method": "GET",
         "header": "",
         "data": {}
     },
     {
         "desc": "工伤预防网上培训平台",
-        "url": "http://wf.zhuanjipx.com:8084//api-user/zjUsersPersonal/getSmsCode?mobile=[phone]&mobileCodeId=a87c9338-43a1-66ea-8ce7-1b1ac7c39d69",
+        "url": "http://wf.zhuanjipx.com:8084//api-user/zjUsersPersonal/getSmsCode?mobile={{phone}}&mobileCodeId=a87c9338-43a1-66ea-8ce7-1b1ac7c39d69",
         "method": "GET",
         "header": "",
         "data": {}
@@ -434,13 +434,13 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]",
+            "phone": "{{phone}}",
             "sendType": "4"
         }
     },
     {
         "desc": "宁夏伊地地质工程有限公司",
-        "url": "http://www.yddzgc.com/bid-app/api/sys/code?phone=[phone]&type=1",
+        "url": "http://www.yddzgc.com/bid-app/api/sys/code?phone={{phone}}&type=1",
         "method": "GET",
         "header": "",
         "data": {}
@@ -451,7 +451,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone_number": "[phone]"
+            "phone_number": "{{phone}}"
         }
     },
     {
@@ -460,7 +460,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "username": "[phone]",
+            "username": "{{phone}}",
             "type": "regUser",
             "mobile": "PC"
         }
@@ -472,7 +472,7 @@
         "header": "",
         "data": {
             "temp": "1",
-            "phone": "[phone]"
+            "phone": "{{phone}}"
         }
     },
     {
@@ -481,12 +481,12 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]"
+            "phone": "{{phone}}"
         }
     },
     {
         "desc": "聚题库",
-        "url": "https://uc.csdhe.com/v1/sms/send?mobile=[phone]&apptype=examWeb",
+        "url": "https://uc.csdhe.com/v1/sms/send?mobile={{phone}}&apptype=examWeb",
         "method": "GET",
         "header": "",
         "data": {}
@@ -497,12 +497,12 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]"
+            "phone": "{{phone}}"
         }
     },
     {
         "desc": "专业技术人员继续教育平台",
-        "url": "http://zhuanjipx.com:8082//api-user/zjUsersPersonal/getSmsCode?mobile=[phone]&mobileCodeId=685110c6-cef4-bb01-8f4d-19ea89f4d3f8",
+        "url": "http://zhuanjipx.com:8082//api-user/zjUsersPersonal/getSmsCode?mobile={{phone}}&mobileCodeId=685110c6-cef4-bb01-8f4d-19ea89f4d3f8",
         "method": "GET",
         "header": "",
         "data": {}
@@ -513,7 +513,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]",
+            "phone": "{{phone}}",
             "sendType": "4"
         }
     },
@@ -523,7 +523,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "mobile": "[phone]"
+            "mobile": "{{phone}}"
         }
     },
     {
@@ -532,7 +532,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "mobile": "[phone]"
+            "mobile": "{{phone}}"
         }
     },
     {
@@ -541,7 +541,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]"
+            "phone": "{{phone}}"
         }
     },
     {
@@ -550,7 +550,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "mobile": "[phone]"
+            "mobile": "{{phone}}"
         }
     },
     {
@@ -561,14 +561,14 @@
             "referer": "https://www.yuque.com/register"
         },
         "data": {
-            "target": "[phone]",
+            "target": "{{phone}}",
             "action": "register",
             "channel": "sms"
         }
     },
     {
         "desc": "甜糖app",
-        "url": "http://tiantang.mogencloud.com/web/api/login/code?phone=[phone]",
+        "url": "http://tiantang.mogencloud.com/web/api/login/code?phone={{phone}}",
         "method": "POST",
         "header": "",
         "data": ""
@@ -596,13 +596,13 @@
             "OSVersion": "11",
             "creditkey": "",
             "hl": "zh-CN",
-            "mobile": "[phone]",
+            "mobile": "{{phone}}",
             "register": "0"
         }
     },
     {
         "desc": "乐教乐学",
-        "url": "http://id.lejiaolexue.com/api/sendvericode.ashx?phone=[phone]",
+        "url": "http://id.lejiaolexue.com/api/sendvericode.ashx?phone={{phone}}",
         "method": "GET",
         "header": "",
         "data": ""
@@ -612,7 +612,7 @@
         "url": "http://www.yhis999.cn/yunhis/register.do?act=lable&type=yzm",
         "method": "POST",
         "header": "",
-        "data": "{'lxdh': [phone]}"
+        "data": "{'lxdh': {{phone}}}"
     },
     {
         "desc": "秘塔写作",
@@ -620,33 +620,33 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "86-[phone]"
+            "phone": "86-{{phone}}"
         }
     },
     {
         "desc": "CNMO 网站",
-        "url": "http://passport.cnmo.com/index.php?c=Member_Ajax_Register&m=SendMessageCode&Jsoncallback=jQuery18306147606011785998_[timestamp]&mobile=[phone]&type=5&_=[timestamp]",
+        "url": "http://passport.cnmo.com/index.php?c=Member_Ajax_Register&m=SendMessageCode&Jsoncallback=jQuery18306147606011785998_{{timestamp}}&mobile={{phone}}&type=5&_={{timestamp}}",
         "method": "POST",
         "header": "",
         "data": ""
     },
     {
         "desc": "DR钻戒web",
-        "url": "https://elove.darryring.com/api/crm/newGwLogin/getSMSValidCode?phone=[phone]&type=login",
+        "url": "https://elove.darryring.com/api/crm/newGwLogin/getSMSValidCode?phone={{phone}}&type=login",
         "method": "GET",
         "header": "",
         "data": ""
     },
     {
         "desc": "有享云商web",
-        "url": "https://mallapi.yofogo.com/biz-mall-application/v1/user/verifyCode/getVerifyCode?phone=[phone]&descriptionType=1&codeType=2",
+        "url": "https://mallapi.yofogo.com/biz-mall-application/v1/user/verifyCode/getVerifyCode?phone={{phone}}&descriptionType=1&codeType=2",
         "method": "GET",
         "header": "",
         "data": ""
     },
     {
         "desc": "研才教育app",
-        "url": "https://mall.yancais.com/api/sms/send?phone=[phone]",
+        "url": "https://mall.yancais.com/api/sms/send?phone={{phone}}",
         "method": "GET",
         "header": "",
         "data": ""
@@ -657,7 +657,7 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]",
+            "phone": "{{phone}}",
             "product": "biyingdianhua_ios",
             "key": "mwoe093fwef"
         }
@@ -670,7 +670,7 @@
         "data": {
             "appType": "1",
             "app_id": "5555",
-            "mobileNo": "[phone]",
+            "mobileNo": "{{phone}}",
             "sig": "16cd52ea74f5ea4a6c2fe80b9a04f8b5",
             "src": "1",
             "v": "4.9.2",
@@ -679,24 +679,24 @@
     },
     {
         "desc": "快应用美抽",
-        "url": "http://users.seeyouyima.com/xiaomi/connect/?action=getCaptcha&v=2.1.0&app_id=11&platform=7&myclient=1172100000&account=[phone]",
+        "url": "http://users.seeyouyima.com/xiaomi/connect/?action=getCaptcha&v=2.1.0&app_id=11&platform=7&myclient=1172100000&account={{phone}}",
         "method": "POST",
         "header": "",
         "data": ""
     },
     {
         "desc": "小叶子app",
-        "url": "https://dss.xiaoyezi.com/student_app/auth/validate_code?mobile=[phone]&country_code=86",
+        "url": "https://dss.xiaoyezi.com/student_app/auth/validate_code?mobile={{phone}}&country_code=86",
         "method": "GET",
         "header": "",
         "data": ""
     },
     {
         "desc": "牙e在线",
-        "url": "https://yae920.com/login/sendSMS?mobile=[phone]&smsType=02&timestamp=[timestamp]",
+        "url": "https://yae920.com/login/sendSMS?mobile={{phone}}&smsType=02&timestamp={{timestamp}}",
         "method": "POST",
         "header": "",
-        "data": "mobile=[phone]&smsType=02&timestamp=[timestamp]"
+        "data": "mobile={{phone}}&smsType=02&timestamp={{timestamp}}"
     },
     {
         "desc": "某数图表web(存疑)",
@@ -709,35 +709,35 @@
     },
     {
         "desc": "17k小说网app",
-        "url": "http://api.17k.com/user/mobile/[phone]/message?smsType=2&deviceFlag=64e538d8f0cff7bb107dd8c1fba0f5a2&cpsOpid=17Kxiaomi&_filterData=1&device_id=e0c0b30933e42492&channel=0&_versions=1280&merchant=17Kxiaomi&ua=Mozilla%2F5.0%20%28Linux%3B%20Android%2011%3B%20M2102J2SC%20Build%2FRKQ1.200826.002%3B%20wv%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Version%2F4.0%20Chrome%2F100.0.4896.127%20Mobile%20Safari%2F537.36&platform=2&manufacturer=Xiaomi&clientType=1&width=1080&appKey=4037465544&model=M2102J2SC&cpsSource=0&brand=Xiaomi&youthModel=0&height=2206",
+        "url": "http://api.17k.com/user/mobile/{{phone}}/message?smsType=2&deviceFlag=64e538d8f0cff7bb107dd8c1fba0f5a2&cpsOpid=17Kxiaomi&_filterData=1&device_id=e0c0b30933e42492&channel=0&_versions=1280&merchant=17Kxiaomi&ua=Mozilla%2F5.0%20%28Linux%3B%20Android%2011%3B%20M2102J2SC%20Build%2FRKQ1.200826.002%3B%20wv%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Version%2F4.0%20Chrome%2F100.0.4896.127%20Mobile%20Safari%2F537.36&platform=2&manufacturer=Xiaomi&clientType=1&width=1080&appKey=4037465544&model=M2102J2SC&cpsSource=0&brand=Xiaomi&youthModel=0&height=2206",
         "method": "GET",
         "header": "",
         "data": ""
     },
     {
         "desc": "汇看点快应用",
-        "url": "https://grzx.brily.cn/api/utils/sendSmsCode?phone=[phone]&type=USER_REG",
+        "url": "https://grzx.brily.cn/api/utils/sendSmsCode?phone={{phone}}&type=USER_REG",
         "method": "POST",
         "header": "",
         "data": ""
     },
     {
         "desc": "核桃编程app",
-        "url": "https://api.hetao101.com/login/v2/account/oauth/verifyCode?phoneNumber=[phone]",
+        "url": "https://api.hetao101.com/login/v2/account/oauth/verifyCode?phoneNumber={{phone}}",
         "method": "GET",
         "header": "",
         "data": ""
     },
     {
         "desc": "永城至敏",
-        "url": "http://101.132.126.166:8080/message/sendVerifyCode?callback=successCallback&mobilePhone=[phone]&t=1589625247333action_type=regist&mobile=[phone]",
+        "url": "http://101.132.126.166:8080/message/sendVerifyCode?callback=successCallback&mobilePhone={{phone}}&t=1589625247333action_type=regist&mobile={{phone}}",
         "method": "GET",
         "header": "",
         "data": ""
     },
     {
         "desc": "金中网",
-        "url": "https://jrh.financeun.com/Login/sendMessageCode3.html?mobile=[phone]&mbid=197858&check=3",
+        "url": "https://jrh.financeun.com/Login/sendMessageCode3.html?mobile={{phone}}&mbid=197858&check=3",
         "method": "GET",
         "header": "",
         "data": ""
