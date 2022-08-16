@@ -8,7 +8,7 @@ from loguru import logger
 
 
 def render_template(phone: int | str):
-	env = Environment(loader=FileSystemLoader("../Mysmsboom"))
+	env = Environment(loader=FileSystemLoader("../smsboom-simple"))
 	temp = env.get_template("api.json").render(phone=str(phone), timestamp=str(int(datetime.now().timestamp())))
 	text: list = json.loads(temp)
 	return text
