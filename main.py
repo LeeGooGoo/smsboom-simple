@@ -33,26 +33,26 @@ def send_request(args: dict, lk):
 			logger.error(f"{args['desc']}-{str(fp)[:30]}")
 
 
-def update():
-	api_url = r"https://hk1.monika.love/AdminWhaleFall/SMSBoom/master/api.json"
-	headers = {
-		"User-Agent": "Mozilla/5.0 (Linux; U; Android 10; zh-cn; Mi 10 Build/QKQ1.191117.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.147 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.5.40"
-	}
-	try:
-		logger.info(f"正在拉取最新接口!")
-		urllib3.disable_warnings()
-		res = requests.get(url=api_url, headers=headers, verify=False, timeout=10)
-	except Exception as why:
-		logger.error(f"拉取更新失败:{why}请关闭所有代理软件多尝试几次!")
-	else:
-		with open("api.json", mode="w", encoding="utf-8") as fp:
-			json.dump(res.json(), fp, ensure_ascii=False, indent=4)
-			logger.success(f"接口更新成功!")
+# def update():
+# 	api_url = r"https://hk1.monika.love/AdminWhaleFall/SMSBoom/master/api.json"
+# 	headers = {
+# 		"User-Agent": "Mozilla/5.0 (Linux; U; Android 10; zh-cn; Mi 10 Build/QKQ1.191117.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.147 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.5.40"
+# 	}
+# 	try:
+# 		logger.info(f"正在拉取最新接口!")
+# 		urllib3.disable_warnings()
+# 		res = requests.get(url=api_url, headers=headers, verify=False, timeout=10)
+# 	except Exception as why:
+# 		logger.error(f"拉取更新失败:{why}请关闭所有代理软件多尝试几次!")
+# 	else:
+# 		with open("api.json", mode="w", encoding="utf-8") as fp:
+# 			json.dump(res.json(), fp, ensure_ascii=False, indent=4)
+# 			logger.success(f"接口更新成功!")
 
 
 def main(phone: int | str, frequency: int | str = 1):
 	lock = threading.Lock()
-	update()
+# 	update()
 	seq = render_template(phone)
 	for _ in range(int(frequency)):
 		for i in seq:
