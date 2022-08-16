@@ -3,7 +3,6 @@ from datetime import datetime
 import threading
 
 import requests
-import urllib3
 from jinja2 import FileSystemLoader, Environment
 from loguru import logger
 
